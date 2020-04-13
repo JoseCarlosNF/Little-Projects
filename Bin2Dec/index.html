@@ -3,9 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.css" />
     <title>Bin2Dec</title>
   </head>
   <body>
-    <h1>Teste</h1>
+    <div class="container">
+      <h1>Bin2Dec</h1>
+      <h3>Binary and Decimal converter</h3>
+
+      <div class="input-output">
+        <h3 id="input">Binary</h3>
+        <input id="input-1" type="number" />
+        
+        <h3 id="output">Decimal</h3>
+        <input id="input-2" type="number" readonly />
+      </div>
+
+      <button onclick="convert()">Convert</button>
+      <button onclick="changeMode()">⇆</button>
+    </div>
+
+    <script src="./js/bin2dec.js"></script>
   </body>
 </html>
